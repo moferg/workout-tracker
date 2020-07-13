@@ -44,5 +44,5 @@ output_file.close()
 # TODO - visualize data
 
 fig, ax = plt.subplots()
-ax.plot(workout_exercises, exercise_volumes)
+ax.bar(workout_exercises, exercise_volumes)
 plt.show()
