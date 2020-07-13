@@ -42,3 +42,7 @@ print("For your workout, you performed a total of {} exercises and lifted a tota
 output_file.close()
 
 # TODO - visualize data
+
+fig, ax = plt.subplots()
+ax.plot(workout_exercises, exercise_volumes)
+plt.show()
