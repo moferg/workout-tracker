@@ -28,5 +28,6 @@ print("You performed a total of {} reps and lifted a total volume of {} lbs".for
 output_file = open(".\\workout_data.csv", "a", newline="")
 output_writer = csv.writer(output_file)
 output_writer.writerow([name, sets, reps, weight, total_reps, volume])
+output_file.close()
 
 # TODO - visualize data
