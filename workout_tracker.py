@@ -45,4 +45,6 @@ output_file.close()
 
 fig, ax = plt.subplots()
 ax.bar(workout_exercises, exercise_volumes)
+for i in range(0,len(workout_exercises)):
+    ax.annotate(str(exercise_volumes[i]), xy=(i , exercise_volumes[i]))
 plt.show()
